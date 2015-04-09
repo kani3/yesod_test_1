@@ -16,4 +16,4 @@ getHomeR :: Handler Html
 getHomeR = defaultLayout [whamlet|Hello World!|]
 
 main :: IO ()
-main = warp 3000 HelloWorld
+main = warpEnv HelloWorld
