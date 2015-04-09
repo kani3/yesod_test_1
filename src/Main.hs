@@ -13,7 +13,7 @@ mkYesod "HelloWorld" [parseRoutes|
 instance Yesod HelloWorld
 
 getHomeR :: Handler Html
-getHomeR = defaultLayout [whamlet|Hello World!|]
+getHomeR = defaultLayout [whamlet|<h1>Hello World!|]
 
 main :: IO ()
 main = warpEnv HelloWorld
